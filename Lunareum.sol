@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
-import '@pancakeswap/pancake-swap-lib/contracts/utils/Address.sol';
-import './utils/Ownable.sol';
-import "./utils/LPSwapSupport.sol";
-import "./utils/BuyBack.sol";
+import './Address.sol';
+import './Ownable.sol';
+import "./LPSwapSupport.sol";
+import "./BuyBack.sol";
 
 contract Lunareum is IBEP20, LPSwapSupport, BuyBack {
     using SafeMath for uint256;
