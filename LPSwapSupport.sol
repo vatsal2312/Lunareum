@@ -6,12 +6,12 @@ There are far too many uses for the LP swapping pool.
 Rather than rewrite them, this contract performs them for us and uses both generic and specific calls.
 -The Dev
 */
-import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol';
-import '@pancakeswap/pancake-swap-lib/contracts/utils/Address.sol';
-import '@pancakeswap/pancake-swap-lib/contracts/math/SafeMath.sol';
-import '@pancakeswap-libs/pancake-swap-core/contracts/interfaces/IPancakePair.sol';
-import '@pancakeswap-libs/pancake-swap-core/contracts/interfaces/IPancakeFactory.sol';
-import 'pancakeswap-peripheral/contracts/interfaces/IPancakeRouter02.sol';
+import './IBEP20.sol';
+import './Address.sol';
+import './SafeMath.sol';
+import './IPancakePair.sol';
+import './IPancakeFactory.sol';
+import './IPancakeRouter02.sol';
 import "./Ownable.sol";
 
 abstract contract LPSwapSupport is Ownable {
